@@ -1,12 +1,14 @@
 {
-  "name": "swap-files",
+  "name": "shwop",
   "version": "1.0.0",
-  "description": "",
+  "description": "A file and directory name swap utility for node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "bin": "./bin.js",
+  "author": "Emile Indik",
+  "repository": "git://github.com/emileindik/swap-files.git",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^7.0.1",

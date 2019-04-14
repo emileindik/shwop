@@ -1,5 +1,5 @@
-module.exports = swap
-swap.sync = swapSync
+module.exports = shwop
+shwop.sync = shwopSync
 
 const path = require('path')
 const fs = require('fs-extra')
@@ -7,7 +7,7 @@ const os = require('os')
 const uniqueFilename = require('unique-filename')
 
 
-async function swap (item1, item2, callback) {
+async function shwop (item1, item2, callback) {
 
   // normalize paths (absolute)
   item1 = path.resolve(item1)
@@ -15,7 +15,7 @@ async function swap (item1, item2, callback) {
 
   // tmpItem1 path. item name prefixed with original item1 name
   const tmpItem1 = uniqueFilename(os.tmpdir(), path.basename(item1))
-  console.log(tmpItem1)
+  // console.log(tmpItem1)
 
   try {
   
@@ -55,7 +55,7 @@ async function swap (item1, item2, callback) {
 
 
 
-function swapSync (item1, item2) {
+function shwopSync (item1, item2) {
 
   // normalize paths (absolute)
   item1 = path.resolve(item1)
