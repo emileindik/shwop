@@ -63,7 +63,7 @@ function shwopSync (item1, item2) {
 
   // tmpItem1 path. item name prefixed with original item1 name
   const tmpItem1 = uniqueFilename(os.tmpdir(), path.basename(item1))
-  console.log(tmpItem1)
+  // console.log(tmpItem1)
 
   // make sure items exist and are writable
   for (const item of [item1, item2]) {

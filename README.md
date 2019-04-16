@@ -1,10 +1,20 @@
-Swaps the locations/names/paths of two files or two directories.
+Swaps the contents of two files or two directories.
+Another way to think of it is swapping their full path including name)
 
 Install with `npm install shwop`, or `npm install shwop -g` for use as a CLI.
 
+### Examples
 ```javascript
 const shwop = require('shwop')
 
+// If supplied a callback, shwop will call it
+shwop('file1.txt', 'file2.txt', err => {
+  if (err) {
+    // handle err
+  }
+})
+
+// If no callback supplied, will return a Promise
 shwop('file1.txt', 'file2.txt')
 .catch(console.error)
 
@@ -13,6 +23,8 @@ shwop('/absolute/path/file1.txt', 'relative/path/file2.txt')
 
 shwop('dir1/', 'dir2/')
 .catch(console.error)
+
+shwop.sync('file1.txt', 'file2.txt')
 ```
 
 ### shwop.sync
