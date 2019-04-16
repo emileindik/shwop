@@ -1,6 +1,6 @@
 {
   "name": "shwop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A file and directory name swap utility for node",
   "main": "index.js",
   "scripts": {
