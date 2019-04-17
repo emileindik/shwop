@@ -1,5 +1,5 @@
 Swaps the contents of two files or two directories.
-Another way to think of it is swapping their full path including name)
+I.e. swap their full path including name
 
 Install with `npm install shwop`, or `npm install shwop -g` for use as a CLI.
 
@@ -29,7 +29,7 @@ shwop.sync('file1.txt', 'file2.txt')
 
 ### shwop.sync
 
-It can shwop stuff synchronously, too. Hope you have a good reason for using sync.
+It can also shwop stuff synchronously. Hope you have a good reason for using sync.
 
 ### CLI
 
